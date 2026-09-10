@@ -1,6 +1,12 @@
-# Data Digger Project
+# Data Digger
 
-"Data Digger" is a practical SQL project developed using PostgreSQL. It demonstrates database design, table relationships using Primary and Foreign Keys, CRUD operations, aggregate functions, and date filtering.
+Data Digger is a practical SQL project developed using PostgreSQL. The project provides hands-on practice with relational database design, CRUD operations, filtering, sorting, aggregate functions, primary keys, and foreign keys.
+
+---
+
+## Project Objective
+
+The main objective of this project is to build and manage an E-Commerce Store database using SQL. The project demonstrates how multiple related tables are created and connected, and how SQL queries are executed to perform data manipulation, filtering, sorting, date-range calculations, and aggregate analytics.
 
 ---
 
