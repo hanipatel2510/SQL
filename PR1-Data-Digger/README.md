@@ -98,3 +98,12 @@ PR1-Data-Digger/
 │   └── orderdetails_output.png
 ├── data_digger.sql
 └── README.md
+
+---
+
+## Key Learnings
+
+- Managing primary and foreign key constraints to maintain referential integrity.
+- Handling data manipulation without violating relational dependencies.
+- Writing dynamic date queries using PostgreSQL date arithmetic functions.
+- Aggregating transaction metrics to calculate revenue and sales volume.
