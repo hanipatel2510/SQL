@@ -6,14 +6,16 @@ Data Digger is a practical SQL project developed using PostgreSQL. The project p
 
 ## Project Objective
 
-The main objective of this project is to build and manage an E-Commerce Store database using SQL. The project demonstrates how multiple related tables are created and connected, and how SQL queries are executed to perform data manipulation, filtering, sorting, date-range calculations, and aggregate analytics.
+The main objective of this project is to create and manage an E-Commerce Store database using SQL. The project demonstrates how multiple related tables can be created and connected and how SQL queries can be used to insert, retrieve, update, delete, filter, sort, and summarize data.
 
 ---
 
 ## Video Demonstration
-video Link:[https://drive.google.com/file/d/1smTsM8ZWlVbPyTswtI7mNHajI58zAkjr/view?usp=sharing]
+
+**Video Link:** [https://drive.google.com/file/d/1smTsM8ZWlVbPyTswtI7mNHajI58zAkjr/view?usp=sharing]
 
 ---
+
 ## Database Schema & Tables
 
 The project consists of four interconnected relational tables:
@@ -23,58 +25,100 @@ The project consists of four interconnected relational tables:
 - **Products:** ProductID (PK), ProductName, Price, Stock
 - **OrderDetails:** OrderDetailID (PK), OrderID (FK), ProductID (FK), Quantity, SubTotal
 
-**Relationships:**
-- `Customers.CustomerID` → `Orders.CustomerID`
-- `Orders.OrderID` → `OrderDetails.OrderID`
-- `Products.ProductID` → `OrderDetails.ProductID`
+**Entity Relationships:**
+- `Customers.CustomerID` (1) ───< `Orders.CustomerID` (M)
+- `Orders.OrderID` (1) ───< `OrderDetails.OrderID` (M)
+- `Products.ProductID` (1) ───< `OrderDetails.ProductID` (M)
+
+---
+
+## Sample Data Records
+
+### 1. Customers
+| CustomerID | Name | Email | Address |
+| :--- | :--- | :--- | :--- |
+| 1 | Alice | alice@gmail.com | Ahmedabad |
+| 2 | Rahul | rahul@gmail.com | Vadodara |
+| 3 | Priya | priya@gmail.com | Surat |
+| 4 | Neha | neha@gmail.com | Rajkot |
+| 5 | Amit | amit@gmail.com | Gandhinagar |
+| 6 | Alice | alice6@gmail.com | Jaipur |
+
+### 2. Products
+| ProductID | ProductName | Price (₹) | Stock |
+| :--- | :--- | :--- | :--- |
+| 201 | Wireless Mouse | 450.00 | 20 |
+| 202 | Mechanical Keyboard | 1500.00 | 15 |
+| 203 | USB-C Hub | 850.00 | 0 *(Out of Stock)* |
+| 204 | Gaming Headset | 2200.00 | 8 |
+| 205 | Laptop Stand | 600.00 | 25 |
+| 206 | Monitor 24-inch | 8500.00 | 5 |
+
+### 3. Orders
+| OrderID | CustomerID | OrderDate | TotalAmount (₹) |
+| :--- | :--- | :--- | :--- |
+| 101 | 1 | CURRENT_DATE - 5 | 55,000.00 |
+| 102 | 2 | CURRENT_DATE - 10 | 25,000.00 |
+| 103 | 3 | CURRENT_DATE - 45 | 3,000.00 |
+| 104 | 4 | CURRENT_DATE - 20 | 5,000.00 |
+| 105 | 1 | CURRENT_DATE - 2 | 2,700.00 |
+| 106 | 5 | CURRENT_DATE - 2 | 2,700.00 |
+
+### 4. OrderDetails
+| OrderDetailID | OrderID | ProductID | Quantity | SubTotal (₹) |
+| :--- | :--- | :--- | :--- | :--- |
+| 1 | 101 | 201 | 2 | 900.00 |
+| 2 | 101 | 202 | 1 | 1,600.00 |
+| 3 | 102 | 205 | 2 | 1,200.00 |
+| 4 | 103 | 204 | 2 | 4,400.00 |
+| 5 | 101 | 202 | 1 | 1,600.00 |
+| 6 | 105 | 205 | 2 | 1,200.00 |
 
 ---
 
 ## Execution & Output Screenshots
 
 ### 1. Customers Table
-* **Insert Customers Data:**
-  ![Customers Insert](screenshots/customers_insert.png)
 
-* **Final Table State (`SELECT * FROM Customers;`):**
+* **Final Table State (`SELECT * FROM Customers;`):**  
   ![Customers Output](screenshots/customers_output.png)
 
 ---
 
 ### 2. Orders Table
-* **Insert Orders Data:**
+* **Insert Orders Data:**  
   ![Orders Insert](screenshots/orders_insert.png)
 
-* **Final Table State (`SELECT * FROM Orders;`):**
+* **Final Table State (`SELECT * FROM Orders;`):**  
   ![Orders Output](screenshots/orders_output.png)
 
 ---
 
 ### 3. Products Table
-* **Insert Products Data:**
+* **Insert Products Data:**  
   ![Products Insert](screenshots/products_insert.png)
 
-* **Final Table State (`SELECT * FROM Products;`):**
+* **Final Table State (`SELECT * FROM Products;`):**  
   ![Products Output](screenshots/products_output.png)
 
 ---
 
 ### 4. OrderDetails Table
-* **Insert OrderDetails Data:**
+* **Insert OrderDetails Data:**  
   ![OrderDetails Insert](screenshots/orderdetails_insert.png)
 
-* **Final Table State (`SELECT * FROM OrderDetails;`):**
+* **Final Table State (`SELECT * FROM OrderDetails;`):**  
   ![OrderDetails Output](screenshots/orderdetails_output.png)
 
 ---
 
 ## SQL Concepts Applied
 
-- **DDL:** `CREATE TABLE`, `PRIMARY KEY`, `FOREIGN KEY`
-- **DML:** `INSERT`, `UPDATE`, `DELETE`
-- **DQL & Clauses:** `SELECT`, `WHERE`, `ORDER BY`, `BETWEEN`, `LIMIT`
-- **Date Handling:** `CURRENT_DATE - INTERVAL '30 days'`
-- **Aggregate Functions:** `MAX()`, `MIN()`, `AVG()`, `ROUND()`, `SUM()`, `COUNT()`, `GROUP BY`
+- **DDL (Data Definition Language):** `CREATE TABLE`, `PRIMARY KEY`, `FOREIGN KEY`
+- **DML (Data Manipulation Language):** `INSERT`, `UPDATE`, `DELETE`
+- **DQL & Filtering:** `SELECT`, `WHERE`, `ORDER BY`, `BETWEEN`, `LIMIT`
+- **Date Arithmetic:** Dynamic 30-day window querying via `CURRENT_DATE - INTERVAL '30 days'`
+- **Aggregate Analytics:** `MAX()`, `MIN()`, `AVG()`, `ROUND()`, `SUM()`, `COUNT()`, `GROUP BY`
 
 ---
 
@@ -102,12 +146,3 @@ PR1-Data-Digger/
 │   └── orderdetails_output.png
 ├── data_digger.sql
 └── README.md
-
----
-
-## Key Learnings
-
-- Managing primary and foreign key constraints to maintain referential integrity.
-- Handling data manipulation without violating relational dependencies.
-- Writing dynamic date queries using PostgreSQL date arithmetic functions.
-- Aggregating transaction metrics to calculate revenue and sales volume.
