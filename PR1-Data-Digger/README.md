@@ -1,22 +1,22 @@
-# Data Digger
+# 📊 Data Digger
 
 Data Digger is a practical SQL project developed using PostgreSQL. The project provides hands-on practice with relational database design, CRUD operations, filtering, sorting, aggregate functions, primary keys, and foreign keys.
 
 ---
 
-## Project Objective
+## 🎯 Project Objective
 
 The main objective of this project is to create and manage an E-Commerce Store database using SQL. The project demonstrates how multiple related tables can be created and connected and how SQL queries can be used to insert, retrieve, update, delete, filter, sort, and summarize data.
 
 ---
 
-## Video Demonstration
+## 🎥 Video Demonstration
 
 **Video Link:** [https://drive.google.com/file/d/1smTsM8ZWlVbPyTswtI7mNHajI58zAkjr/view?usp=sharing]
 
 ---
 
-## Database Schema & Tables
+##  🗄️ Database Schema & Tables
 
 The project consists of four interconnected relational tables:
 
@@ -25,14 +25,14 @@ The project consists of four interconnected relational tables:
 - **Products:** ProductID (PK), ProductName, Price, Stock
 - **OrderDetails:** OrderDetailID (PK), OrderID (FK), ProductID (FK), Quantity, SubTotal
 
-**Entity Relationships:**
+**🔗Entity Relationships:**
 - `Customers.CustomerID` (1) ───< `Orders.CustomerID` (M)
 - `Orders.OrderID` (1) ───< `OrderDetails.OrderID` (M)
 - `Products.ProductID` (1) ───< `OrderDetails.ProductID` (M)
 
 ---
 
-## Sample Data Records
+## 📋 Sample Data Records
 
 ### 1. Customers
 | CustomerID | Name | Email | Address |
@@ -76,35 +76,35 @@ The project consists of four interconnected relational tables:
 
 ---
 
-## Output Screenshots
+## 📸 Output Screenshots
 
-### 1. Customers Table
+### 👤 1. Customers Table
   ![Output](Output/Output1.png)
 
 ---
 
-### 2. Orders Table
+### 🛒  2. Orders Table
 ![Output](Output/Output-order-table3.png)
 ![Output](Output/output-order-table1.png)
 ![Output](Output/Output-order-table.png)
 
 ---
 
-### 3. Products Table
+### 📦 3. Products Table
 ![Output](Output/Output-product-table1.png)
 ![Output](Output/Output-product-table2.png)
 ![Output](Output/Output-product-table.png)
 
 ---
 
-### 4. OrderDetails Table
+### 📑 4. OrderDetails Table
 ![Output](Output/Output-orderdetails-table2.png)
 ![Output](Output/output-orderdetails-table1.png)
 ![Output](Output/Output-orderdetails-table.png)
 
 ---
 
-## SQL Concepts Applied
+## 💻 SQL Concepts Applied
 
 - **DDL (Data Definition Language):** `CREATE TABLE`, `PRIMARY KEY`, `FOREIGN KEY`
 - **DML (Data Manipulation Language):** `INSERT`, `UPDATE`, `DELETE`
@@ -114,7 +114,7 @@ The project consists of four interconnected relational tables:
 
 ---
 
-## How to Run
+## ▶️ How to Run
 
 1. Open **PostgreSQL** in **pgAdmin** or Query Tool.
 2. Open and run the complete `data_digger.sql` file.
@@ -122,7 +122,7 @@ The project consists of four interconnected relational tables:
 
 ---
 
-## Project Structure
+## 📁 Project Structure
 
 ```text
 PR1-Data-Digger/
@@ -131,10 +131,17 @@ PR1-Data-Digger/
 └── README.md
 ```
 ---
-## Key Learnings
+## 🧠 Key Learnings
 
-- Gained hands-on experience in relational database architecture by establishing clear entity relationships across normalized tables using Primary and Foreign Key constraints to safeguard referential integrity.
+* Created and managed relational tables using PostgreSQL.
+* Used Primary Keys and Foreign Keys to connect tables.
+* Performed CRUD operations using `INSERT`, `UPDATE`, and `DELETE`.
+* Retrieved and filtered data using `SELECT`, `WHERE`, `BETWEEN`, and `ORDER BY`.
+* Used aggregate functions such as `MAX()`, `MIN()`, `AVG()`, `SUM()`, and `COUNT()`.
+* Used `GROUP BY`, `LIMIT`, and PostgreSQL date calculations for data analysis.
 
-- Mastered core CRUD operations along with advanced conditional filtering and sorting, ensuring accurate record updates, inventory cleanups, and seamless customer order tracking.
+## 🏁 Conclusion
 
-- Applied PostgreSQL date intervals and key aggregate functions like SUM, AVG, and COUNT with GROUP BY to perform temporal queries and extract critical business sales metrics.
+* Data Digger provides practical experience in working with a relational E-Commerce database using PostgreSQL.
+* The project demonstrates database design, table relationships, CRUD operations, data filtering, sorting, date calculations, and aggregate analysis using SQL.
+* It is a beginner-friendly project that builds a strong foundation in PostgreSQL and relational database concepts.
