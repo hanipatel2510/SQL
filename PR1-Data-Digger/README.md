@@ -81,7 +81,7 @@ The project consists of four interconnected relational tables:
 ### 1. Customers Table
 
 * **Final Table State (`SELECT * FROM Customers;`):**  
-  ![Customers Output](screenshots/customers_output.png)
+  ![Customers Output](output/Output1.png)
 
 ---
 
