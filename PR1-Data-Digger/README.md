@@ -131,11 +131,10 @@ PR1-Data-Digger/
 └── README.md
 ```
 ---
-
 ## Key Learnings
-Creating and connecting relational tables
-Using Primary and Foreign Keys
-Performing CRUD operations
-Filtering and sorting records
-Working with dates
-Using aggregate functions for data analysis
+
+- Gained hands-on experience in relational database architecture by establishing clear entity relationships across normalized tables using Primary and Foreign Key constraints to safeguard referential integrity.
+
+- Mastered core CRUD operations along with advanced conditional filtering and sorting, ensuring accurate record updates, inventory cleanups, and seamless customer order tracking.
+
+- Applied PostgreSQL date intervals and key aggregate functions like SUM, AVG, and COUNT with GROUP BY to perform temporal queries and extract critical business sales metrics.
