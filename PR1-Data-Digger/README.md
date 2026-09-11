@@ -79,27 +79,27 @@ The project consists of four interconnected relational tables:
 ## Execution & Output Screenshots
 
 ### 1. Customers Table
-
-* **Final Table State (`SELECT * FROM Customers;`):**  
-  ![Customers Output](output/Output1.png)
+  ![Output](Output/Output1.png)
 
 ---
 
 ### 2. Orders Table
 * **Final Table State (`SELECT * FROM Orders;`):**  
-  ![Orders Output](output/Output-order-table.png)
+  ![Output](Output/Output-order-table.png)
+  ![Output](Output/output-order-table1.png)
+  ![Output](Output/Output-order-table3.png)
 
 ---
 
 ### 3. Products Table
-* **Final Table State (`SELECT * FROM Products;`):**  
-  ![Products Output](output/Output-product-table.png)
+![Output](Output/Output-product-table.png)
+![Output](Output/Output-product-table1.png)
 
 ---
 
 ### 4. OrderDetails Table
-* **Final Table State (`SELECT * FROM OrderDetails;`):**  
-  ![OrderDetails Output](output/Output-orderdetails-table.png)
+![Output](Output/Output-orderdetails-table.png)
+![Output](Output/Output-orderdetails-table1.png)
 
 ---
 
@@ -126,14 +126,15 @@ The project consists of four interconnected relational tables:
 ```text
 PR1-Data-Digger/
 │
-├── screenshots/
-│   ├── customers_insert.png
-│   ├── customers_output.png
-│   ├── orders_insert.png
-│   ├── orders_output.png
-│   ├── products_insert.png
-│   ├── products_output.png
-│   ├── orderdetails_insert.png
-│   └── orderdetails_output.png
 ├── data_digger.sql
 └── README.md
+```
+---
+
+## Key Learnings
+Creating and connecting relational tables
+Using Primary and Foreign Keys
+Performing CRUD operations
+Filtering and sorting records
+Working with dates
+Using aggregate functions for data analysis
