@@ -10,6 +10,10 @@ The main objective of this project is to build and manage an E-Commerce Store da
 
 ---
 
+## Video Demonstration
+video Link:[https://drive.google.com/file/d/1smTsM8ZWlVbPyTswtI7mNHajI58zAkjr/view?usp=sharing]
+
+---
 ## Database Schema & Tables
 
 The project consists of four interconnected relational tables:
