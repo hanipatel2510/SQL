@@ -84,9 +84,9 @@ The project consists of four interconnected relational tables:
 ---
 
 ### 2. Orders Table
-* ![Output](Output/Output-order-table3.png)
-*  ![Output](Output/output-order-table1.png)
-  ![Output](Output/Output-order-table.png)
+![Output](Output/Output-order-table3.png)
+![Output](Output/output-order-table1.png)
+![Output](Output/Output-order-table.png)
 
 ---
 
