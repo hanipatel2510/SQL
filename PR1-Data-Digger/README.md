@@ -49,7 +49,7 @@ The project consists of four interconnected relational tables:
 | :--- | :--- | :--- | :--- |
 | 201 | Wireless Mouse | 450.00 | 20 |
 | 202 | Mechanical Keyboard | 1500.00 | 15 |
-| 203 | USB-C Hub | 850.00 | 0 *(Out of Stock)* |
+| 203 | USB-C Hub | 850.00 | 0  |
 | 204 | Gaming Headset | 2200.00 | 8 |
 | 205 | Laptop Stand | 600.00 | 25 |
 | 206 | Monitor 24-inch | 8500.00 | 5 |
