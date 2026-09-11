@@ -78,26 +78,26 @@ The project consists of four interconnected relational tables:
 
 ## 📸 Output Screenshots
 
-### 👤 1. Customers Table
+## 👤 1. Customers Table
   ![Output](Output/Output1.png)
 
 ---
 
-### 🛒  2. Orders Table
+## 🛒  2. Orders Table
 ![Output](Output/Output-order-table3.png)
 ![Output](Output/output-order-table1.png)
 ![Output](Output/Output-order-table.png)
 
 ---
 
-### 📦 3. Products Table
+## 📦 3. Products Table
 ![Output](Output/Output-product-table1.png)
 ![Output](Output/Output-product-table2.png)
 ![Output](Output/Output-product-table.png)
 
 ---
 
-### 📑 4. OrderDetails Table
+## 📑 4. OrderDetails Table
 ![Output](Output/Output-orderdetails-table2.png)
 ![Output](Output/output-orderdetails-table1.png)
 ![Output](Output/Output-orderdetails-table.png)
