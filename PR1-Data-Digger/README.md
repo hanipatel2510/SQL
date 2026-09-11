@@ -98,7 +98,7 @@ The project consists of four interconnected relational tables:
 ---
 
 ### 4. OrderDetails Table
-![Output](Output/Output-Orderdetails-table2.png)
+![Output](Output/Output-orderdetails-table2.png)
 ![Output](Output/output-orderdetails-table1.png)
 ![Output](Output/Output-orderdetails-table.png)
 
