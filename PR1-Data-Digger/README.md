@@ -84,7 +84,6 @@ The project consists of four interconnected relational tables:
 ---
 
 ### 2. Orders Table
-* **Final Table State (`SELECT * FROM Orders;`):**
 * ![Output](Output/Output-order-table3.png)
 *  ![Output](Output/output-order-table1.png)
   ![Output](Output/Output-order-table.png)
@@ -99,7 +98,7 @@ The project consists of four interconnected relational tables:
 ---
 
 ### 4. OrderDetails Table
-![Output](Output/output-Orderdetails-table2.png)
+![Output](Output/Output-Orderdetails-table2.png)
 ![Output](Output/output-orderdetails-table1.png)
 ![Output](Output/Output-orderdetails-table.png)
 
