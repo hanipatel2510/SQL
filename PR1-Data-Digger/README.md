@@ -84,22 +84,23 @@ The project consists of four interconnected relational tables:
 ---
 
 ### 2. Orders Table
-* **Final Table State (`SELECT * FROM Orders;`):**  
+* **Final Table State (`SELECT * FROM Orders;`):**
+* ![Output](Output/Output-order-table3.png)
+*  ![Output](Output/output-order-table1.png)
   ![Output](Output/Output-order-table.png)
-  ![Output](Output/output-order-table1.png)
-  ![Output](Output/Output-order-table3.png)
 
 ---
 
 ### 3. Products Table
-![Output](Output/Output-product-table.png)
 ![Output](Output/Output-product-table1.png)
+![Output](Output/Output-product-table.png)
 
 ---
 
 ### 4. OrderDetails Table
-![Output](Output/Output-orderdetails-table.png)
+![Output](Output/output-orderdetails-table2.png)
 ![Output](Output/output-orderdetails-table1.png)
+![Output](Output/Output-orderdetails-table.png)
 
 ---
 
