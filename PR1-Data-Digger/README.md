@@ -76,7 +76,7 @@ The project consists of four interconnected relational tables:
 
 ---
 
-## Execution & Output Screenshots
+## Output Screenshots
 
 ### 1. Customers Table
   ![Output](Output/Output1.png)
