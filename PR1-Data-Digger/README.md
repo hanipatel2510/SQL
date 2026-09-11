@@ -130,12 +130,19 @@ The project consists of four interconnected relational tables:
 
 ## 📁 Project Structure
 
-```text
-PR1-Data-Digger/
-│
-├── data_digger.sql
-└── README.md
+``` textPR1-Data-Digger/
+   
+    ├── data_digger.sql
+    ├── README.md
+    │
+    └── Output/
+        ├── Output1.png
+        ├── Output-order-table.png
+        ├── Output-product-table.png
+        ├── Output-orderdetails-table.png
+        └── other screenshots...
 ```
+
 ---
 
 ## 📊 Data Analysis Performed
