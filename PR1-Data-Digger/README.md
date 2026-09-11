@@ -9,7 +9,13 @@ Data Digger is a practical SQL project developed using PostgreSQL. The project p
 The main objective of this project is to create and manage an E-Commerce Store database using SQL. The project demonstrates how multiple related tables can be created and connected and how SQL queries can be used to insert, retrieve, update, delete, filter, sort, and summarize data.
 
 ---
+## 🛠️ Technologies Used
 
+- **Database:** PostgreSQL
+- **Tool:** pgAdmin
+- **Language:** SQL
+
+---
 ## 🎥 Video Demonstration
 
 **Video Link:** [https://drive.google.com/file/d/1smTsM8ZWlVbPyTswtI7mNHajI58zAkjr/view?usp=sharing]
@@ -131,6 +137,19 @@ PR1-Data-Digger/
 └── README.md
 ```
 ---
+
+## 📊 Data Analysis Performed
+
+* Analyzed customer records and customer-based orders.
+* Retrieved orders placed within the last 30 days.
+* Calculated highest, lowest, and average order amounts.
+* Analyzed products based on price and stock.
+* Calculated total revenue from order details.
+* Identified the top 3 products by quantity ordered.
+* Counted product sales using `COUNT()`.
+
+---
+
 ## 🧠 Key Learnings
 
 * Created and managed relational tables using PostgreSQL.
