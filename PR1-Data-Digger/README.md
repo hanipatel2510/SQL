@@ -159,6 +159,19 @@ PR1-Data-Digger/
 * Used aggregate functions such as `MAX()`, `MIN()`, `AVG()`, `SUM()`, and `COUNT()`.
 * Used `GROUP BY`, `LIMIT`, and PostgreSQL date calculations for data analysis.
 
+---
+
+## 🚀 Future Scope
+
+* Add more customers, products, and order records for larger-scale analysis.
+* Add advanced SQL queries using JOINs, subqueries, and views.
+* Create stored procedures and functions for reusable database operations.
+* Add indexes to improve database query performance.
+* Build dashboards using Power BI or Tableau for visual analysis.
+* Connect the PostgreSQL database with a web application for real-time data management.
+
+---
+
 ## 🏁 Conclusion
 
 * Data Digger provides practical experience in working with a relational E-Commerce database using PostgreSQL.
