@@ -1,17 +1,21 @@
 # PR 2 – Data Transformer
 
-## Video Demonstration 
+### Video Demonstration
+
 video Link:[https://drive.google.com/file/d/1B1sXWGQK2nLEl6EpFB4YWKVgQHAirhlZ/view?usp=sharing]
+---
 
 ## 📌 Project Overview
 
-**Data Transformer** is a PostgreSQL-based SQL project created to practice data transformation, analysis, and advanced SQL operations in a corporate data environment.
+**Data Transformer** is a PostgreSQL-based SQL project created to practice data transformation, analysis, and advanced SQL operations using relational business data.
 
-The project works with three main tables:
+The project uses three main tables:
 
 - **Customers** – customer registration and contact information
 - **Orders** – customer orders, order dates, and transaction amounts
 - **Employees** – employee department, hiring date, and salary information
+
+The project demonstrates how relational data can be joined, transformed, cleaned, analyzed, and categorized using PostgreSQL.
 
 ---
 
@@ -19,10 +23,8 @@ The project works with three main tables:
 
 The main objective of this project is to develop practical SQL skills required for:
 
-- Data reporting
-- Data transformation
-- Data cleaning
-- Relational data analysis
+- Data reporting and relational data analysis
+- Data transformation and cleaning
 - Date and string manipulation
 - Analytical calculations
 - Business-rule implementation
@@ -76,30 +78,33 @@ The main objective of this project is to develop practical SQL skills required f
 
 ---
 
-## 📸 Database Tables
+## 📸 Database & Selected Query Results
+
+The following screenshots show the database tables and selected outputs from important SQL operations.
 
 ### Customers Table
 
-<img width="982" height="232" alt="image" src="https://github.com/user-attachments/assets/cccc8531-4472-4154-a323-ac966569404c" />
+<img width="982" height="232" alt="Customers Table" src="https://github.com/user-attachments/assets/cccc8531-4472-4154-a323-ac966569404c" />
 
-### Orders Table 
+### Orders Table
 
-<img width="590" height="337" alt="image" src="https://github.com/user-attachments/assets/16c6fe55-a79c-4215-b032-4935a5ac4503" />
+<img width="590" height="337" alt="Orders Table" src="https://github.com/user-attachments/assets/16c6fe55-a79c-4215-b032-4935a5ac4503" />
 
 ### Employees Table
 
-<img width="1107" height="231" alt="image" src="https://github.com/user-attachments/assets/854846ba-63e3-4b04-a6f5-445674493039" />
+<img width="1107" height="231" alt="Employees Table" src="https://github.com/user-attachments/assets/854846ba-63e3-4b04-a6f5-445674493039" />
 
-### FULL OUTER JOIN 
+### FULL OUTER JOIN
 
-<img width="972" height="342" alt="image" src="https://github.com/user-attachments/assets/649b6ea1-ead7-46c5-a346-c169be958578" />
+<img width="972" height="342" alt="FULL OUTER JOIN Result" src="https://github.com/user-attachments/assets/649b6ea1-ead7-46c5-a346-c169be958578" />
 
 ### Running Total using Window Function
 
-<img width="595" height="337" alt="image" src="https://github.com/user-attachments/assets/a2e6a33c-d091-4216-8fc6-5e923802abc2" />
+<img width="595" height="337" alt="Running Total Result" src="https://github.com/user-attachments/assets/a2e6a33c-d091-4216-8fc6-5e923802abc2" />
 
 ### Discount Classification using CASE
-<img width="467" height="342" alt="image" src="https://github.com/user-attachments/assets/86d84f11-2101-4cd0-b1b8-fab966bcea51" />
+
+<img width="467" height="342" alt="Discount Classification Result" src="https://github.com/user-attachments/assets/86d84f11-2101-4cd0-b1b8-fab966bcea51" />
 
 ---
 
@@ -185,7 +190,7 @@ Business rules are implemented using `CASE`, `WHEN`, `THEN`, `ELSE`, and `END`.
 3. Open **Query Tool**.
 4. Open `Data_Transformer.sql`.
 5. Run the complete SQL script.
-6. Verify the three tables:
+6. Verify the three tables using:
 
 ```sql
 SELECT * FROM customers;
@@ -193,9 +198,7 @@ SELECT * FROM orders;
 SELECT * FROM employees;
 ```
 
-7. Execute the required queries individually to verify the results.
-8. Save the three table screenshots in the `screenshots` folder.
-9. Upload the SQL file, README, and screenshots to GitHub.
+7. Execute the required queries individually to verify their results.
 
 ---
 
@@ -206,7 +209,14 @@ PR2-Data-Transformer/
 │
 ├── Data_Transformer.sql
 ├── README.md
-
+│
+└── screenshots/
+    ├── customers.png
+    ├── orders.png
+    ├── employees.png
+    ├── full_outer_join.png
+    ├── running_total.png
+    └── discount_case.png
 ```
 
 ---
@@ -225,41 +235,23 @@ PR2-Data-Transformer/
 
 ---
 
-## ✅ Project Highlights
-
-- Designed three relational tables
-- Applied Primary Key and Foreign Key constraints
-- Performed multiple JOIN operations
-- Used subqueries for average-based analysis
-- Applied date and string transformation functions
-- Used window functions for analytical calculations
-- Implemented business logic using `CASE`
-- Documented assumptions clearly
-- Organized the project for GitHub submission
-
----
-
 ## 🎓 Key Learning Outcomes
 
 Through this project, I practiced:
 
-* Designing relational tables using **Primary Key and Foreign Key constraints**
-* Working with multiple types of **SQL JOINs**
-* Using **subqueries** for comparative analysis
-* Performing **date and string transformations**
-* Cleaning text data using SQL functions
-* Applying **window functions** for analytical calculations
-* Implementing business rules using **CASE expressions**
-* Organizing SQL queries into a structured and reusable project
-* Documenting assumptions and analytical logic
+- Designing relational tables using **Primary Key and Foreign Key constraints**
+- Working with multiple types of **SQL JOINs**
+- Using **subqueries** for comparative analysis
+- Performing **date and string transformations**
+- Cleaning text data using SQL functions
+- Applying **window functions** for analytical calculations
+- Implementing business rules using **CASE expressions**
+- Organizing SQL queries into a structured project
 
 ---
 
 ## 📌 Conclusion
 
-The **Data Transformer** project provides practical experience with PostgreSQL and advanced SQL techniques used in data analysis and reporting.
+The **Data Transformer** project provides practical experience with PostgreSQL and SQL techniques used in data analysis and reporting.
 
-It demonstrates how relational data can be joined, transformed, cleaned, analyzed, and categorized using SQL.
-
----
-
+It demonstrates the complete process of working with relational data — from database design and data cleaning to transformation, analytical calculations, and business-rule implementation.
