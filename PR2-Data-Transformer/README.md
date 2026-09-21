@@ -1,4 +1,4 @@
-# 📊 PR 2 – Data Transformation & SQL Analysis
+# 📊  Data Transformation & SQL Analysis
 
 ## 📌 Project Overview
 
