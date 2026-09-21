@@ -212,9 +212,9 @@ PR2-Data-Transformer/
 ├── README.md
 │
 └── screenshots/
-    ├── customers.png
-    ├── orders.png
-    ├── employees.png
+    ├── customer-Table.png
+    ├── order-Table.png
+    ├── employee_table.png
     ├── full_outer_join.png
     ├── running_total.png
     └── discount_case.png
