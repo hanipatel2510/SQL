@@ -1,10 +1,4 @@
-# PR 2 – Data Transformer
-
-### Video Demonstration
-
-video Link:[https://drive.google.com/file/d/1B1sXWGQK2nLEl6EpFB4YWKVgQHAirhlZ/view?usp=sharing]
-
----
+# 🗃️ Data Transformer
 
 ## 📌 Project Overview
 
@@ -17,6 +11,12 @@ The project uses three main tables:
 - **Employees** – employee department, hiring date, and salary information
 
 The project demonstrates how relational data can be joined, transformed, cleaned, analyzed, and categorized using PostgreSQL.
+
+---
+
+## 🎥 Video Demonstration
+
+video Link:[https://drive.google.com/file/d/1B1sXWGQK2nLEl6EpFB4YWKVgQHAirhlZ/view?usp=sharing]
 
 ---
 
