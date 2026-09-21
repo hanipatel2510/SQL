@@ -10,9 +10,6 @@ The project works with three main tables:
 - **Orders** – customer orders, order dates, and transaction amounts
 - **Employees** – employee department, hiring date, and salary information
 
-The project demonstrates how relational data can be joined, filtered, transformed, cleaned, analyzed, and categorized using PostgreSQL.
-Data Transformer is a PostgreSQL-based SQL project focused on transforming, analyzing, and extracting meaningful information from relational business data.
-
 ---
 
 ## 🎯 Objective
