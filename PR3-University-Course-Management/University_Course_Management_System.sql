@@ -272,8 +272,3 @@ SELECT StudentID, FirstName, LastName, EnrollmentDate,
            ELSE 'Junior'
        END AS StudentCategory
 FROM Students;
-SELECT * from departments;
-SELECT * from students;
-SELECT * from courses;
-SELECT * from instructors;
-SELECT * from enrollments;
