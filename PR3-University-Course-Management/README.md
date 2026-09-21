@@ -140,9 +140,9 @@ Enrollments.CourseID     → Courses.CourseID
 
 ![Departments Table](screenshots/department_tables.png)
 
-### Courses with More Than 5 Students
+### Student Classification
 
-![Courses More Than 5 Students](screenshots/courses_more_than_5.png)
+![Student Classification](screenshots/student_classification.png)
 
 ### Students and Their Courses
 
