@@ -182,7 +182,6 @@ Examples of calculations performed include:
 * Counting students enrolled in each course
 * Counting records using `COUNT()`
 * Finding maximum values using `MAX()`
-* Calculating averages using `AVG()` where applicable
 * Generating running totals using a window function
 * Classifying records using `CASE`
 
@@ -215,12 +214,12 @@ University-Course-Management-SQL/
 ├── university_course_management.sql
 │
 └── screenshots/
-    ├── students_table.png
-    ├── courses_table.png
-    ├── instructors_table.png
-    ├── enrollments_table.png
-    ├── departments_table.png
-    ├── courses_more_than_5.png
+    ├── student_tables.png
+    ├── course_tables.png
+    ├── instructor_tables.png
+    ├── enrollment_tables.png
+    ├── department_tables.png
+    ├── student_classification.png
     ├── student_course_inner_join.png
     └── running_total.png
 ```
