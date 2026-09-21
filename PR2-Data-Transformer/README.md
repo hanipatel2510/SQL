@@ -77,17 +77,17 @@ The main objective of this project is to develop practical SQL skills required f
 
 ## 📸 Database Tables
 
-### Customers
+### Customers Table
 
-![Customers Table](<img width="982" height="232" alt="image" src="https://github.com/user-attachments/assets/cccc8531-4472-4154-a323-ac966569404c" />)
+<img width="982" height="232" alt="image" src="https://github.com/user-attachments/assets/cccc8531-4472-4154-a323-ac966569404c" />
 
-### Orders
+### Orders Table 
 
-![Orders Table](screenshots/orders_table.png)
+<img width="590" height="337" alt="image" src="https://github.com/user-attachments/assets/16c6fe55-a79c-4215-b032-4935a5ac4503" />
 
-### Employees
+### Employees Table
 
-![Employees Table](screenshots/employees_table.png)
+<img width="1107" height="231" alt="image" src="https://github.com/user-attachments/assets/854846ba-63e3-4b04-a6f5-445674493039" />
 
 ---
 
@@ -194,11 +194,7 @@ PR2-Data-Transformer/
 │
 ├── Data_Transformer.sql
 ├── README.md
-│
-└── screenshots/
-    ├── customers_table.png
-    ├── orders_table.png
-    └── employees_table.png
+
 ```
 
 ---
