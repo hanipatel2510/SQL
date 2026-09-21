@@ -119,27 +119,27 @@ Enrollments.CourseID     → Courses.CourseID
 ## 📸 Selected Query Results
 ### Students Table
 
-![Students Table](screenshots/students_table.png)
+![Students Table](screenshots/students_tables.png)
 
 ### Courses Table
 
-![Courses Table](screenshots/courses_table.png)
+![Courses Table](screenshots/courses_tables.png)
 
 ### Instructors Table
 
-![Instructors Table](screenshots/instructors_table.png)
+![Instructors Table](screenshots/instructors_tables.png)
 
 ### Enrollments Table
 
-![Enrollments Table](screenshots/enrollments_table.png)
+![Enrollments Table](screenshots/enrollments_tables.png)
 
 ### Departments Table
 
-![Departments Table](screenshots/departments_table.png)
+![Departments Table](screenshots/departments_tables.png)
 
 ### Courses with More Than 5 Students
 
-![Courses More Than 5 Students](screenshots/courses_more_than_5.png)
+![Courses More Than 5 Students](screenshots/student_classification.png)
 
 ### Students and Their Courses
 
