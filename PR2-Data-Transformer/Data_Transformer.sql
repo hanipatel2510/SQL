@@ -51,9 +51,7 @@ INSERT INTO employees (EmployeeID, FirstName, LastName, Department, HireDate, Sa
 (4, 'Emma', 'Taylor', 'Finance', '2022-09-01', 62000.00),
 (5, 'Daniel', 'Anderson', 'IT', '2018-11-25', 90000.00);
 
-SELECT * FROM customers;
-SELECT * FROM orders;
-SELECT * FROM employees;
+
 -- Q1. INNER JOIN
 SELECT o.OrderID,o.OrderDate, o.TotalAmount, c.CustomerID,c.FirstName, c.LastName,c.Email
 FROM orders o
