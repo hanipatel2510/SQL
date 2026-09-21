@@ -85,27 +85,27 @@ The following screenshots show the database tables and selected outputs from imp
 
 ### Customers Table
 
-<img width="982" height="232" alt="Customers Table" src="https://github.com/user-attachments/assets/cccc8531-4472-4154-a323-ac966569404c" />
+![output](screenshots/customer-Table.png)
 
 ### Orders Table
 
-<img width="590" height="337" alt="Orders Table" src="https://github.com/user-attachments/assets/16c6fe55-a79c-4215-b032-4935a5ac4503" />
+![output](screenshots/order-Table.png)
 
 ### Employees Table
 
-<img width="1107" height="231" alt="Employees Table" src="https://github.com/user-attachments/assets/854846ba-63e3-4b04-a6f5-445674493039" />
+![output](screenshots/employee_table.png)
 
 ### FULL OUTER JOIN
 
-<img width="972" height="342" alt="FULL OUTER JOIN Result" src="https://github.com/user-attachments/assets/649b6ea1-ead7-46c5-a346-c169be958578" />
+![output](screenshots/full_outer_join.png)
 
 ### Running Total using Window Function
 
-<img width="595" height="337" alt="Running Total Result" src="https://github.com/user-attachments/assets/a2e6a33c-d091-4216-8fc6-5e923802abc2" />
+![output](screenshots/running_total.png)
 
 ### Discount Classification using CASE
 
-<img width="467" height="342" alt="Discount Classification Result" src="https://github.com/user-attachments/assets/86d84f11-2101-4cd0-b1b8-fab966bcea51" />
+![output](screenshots/discount_case.png)
 
 ---
 
