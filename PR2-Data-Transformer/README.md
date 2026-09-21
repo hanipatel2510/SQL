@@ -11,6 +11,7 @@ The project works with three main tables:
 - **Employees** – employee department, hiring date, and salary information
 
 The project demonstrates how relational data can be joined, filtered, transformed, cleaned, analyzed, and categorized using PostgreSQL.
+Data Transformer is a PostgreSQL-based SQL project focused on transforming, analyzing, and extracting meaningful information from relational business data.
 
 ---
 
@@ -88,6 +89,17 @@ The main objective of this project is to develop practical SQL skills required f
 ### Employees Table
 
 <img width="1107" height="231" alt="image" src="https://github.com/user-attachments/assets/854846ba-63e3-4b04-a6f5-445674493039" />
+
+### FULL OUTER JOIN 
+
+<img width="972" height="342" alt="image" src="https://github.com/user-attachments/assets/649b6ea1-ead7-46c5-a346-c169be958578" />
+
+### Running Total using Window Function
+
+<img width="595" height="337" alt="image" src="https://github.com/user-attachments/assets/a2e6a33c-d091-4216-8fc6-5e923802abc2" />
+
+### Discount Classification using CASE
+<img width="467" height="342" alt="image" src="https://github.com/user-attachments/assets/86d84f11-2101-4cd0-b1b8-fab966bcea51" />
 
 ---
 
@@ -224,6 +236,22 @@ PR2-Data-Transformer/
 - Implemented business logic using `CASE`
 - Documented assumptions clearly
 - Organized the project for GitHub submission
+
+---
+
+## 🎓 Key Learning Outcomes
+
+Through this project, I practiced:
+
+* Designing relational tables using **Primary Key and Foreign Key constraints**
+* Working with multiple types of **SQL JOINs**
+* Using **subqueries** for comparative analysis
+* Performing **date and string transformations**
+* Cleaning text data using SQL functions
+* Applying **window functions** for analytical calculations
+* Implementing business rules using **CASE expressions**
+* Organizing SQL queries into a structured and reusable project
+* Documenting assumptions and analytical logic
 
 ---
 
