@@ -1,5 +1,12 @@
 # 🎓 University Course Management System – SQL Final Project
 
+
+## 🎥 Video Demonstration
+
+Watch Video Demonstration: [https://drive.google.com/file/d/1ODINM8kiOJ1e3Yv5xaQlilU2hwP0AhPS/view?usp=sharing]
+
+---
+
 ## 📌 Project Overview
 
 **University Course Management System** is a PostgreSQL-based SQL project designed to manage university data related to students, courses, instructors, enrollments, and departments.
