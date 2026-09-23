@@ -117,6 +117,8 @@ The project includes **7 selected screenshots** showing the main table data and 
 - **Transactions Table**  
   ![Transactions Table](screenshots/04_transactions_table.png)
 
+### 📁 SQL Data
+
 - **JOIN Output**  
   ![JOIN Output](screenshots/05_inner_join_output.png)
 
