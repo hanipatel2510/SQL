@@ -1,46 +1,43 @@
-DROP DATABASE IF EXISTS library_management_system;
-CREATE DATABASE library_management_system;
-
-DROP TABLE if exists Authors;
-DROP TABLE if exists Books;
-DROP TABLE if exists Members;
-DROP TABLE if exists Transactions;
+DROP TABLE IF EXISTS Transactions CASCADE;
+DROP TABLE IF EXISTS Books CASCADE;
+DROP TABLE IF EXISTS Members CASCADE;
+DROP TABLE IF EXISTS Authors CASCADE;
 
 CREATE TABLE Authors (
-author_id INT PRIMARY KEY,
-name VARCHAR(100) NOT NULL,
-email VARCHAR(100)
+    author_id INT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100)
 );
 
 CREATE TABLE Books (
-book_id INT PRIMARY KEY,
-title VARCHAR(150) NOT NULL,
-author_id INT,
-category VARCHAR(50),
-isbn VARCHAR(20),
-published_date DATE,
-price DECIMAL(10,2),
-available_copies INT,
-FOREIGN KEY (author_id) REFERENCES Authors(author_id)
+    book_id INT PRIMARY KEY,
+    title VARCHAR(150) NOT NULL,
+    author_id INT,
+    category VARCHAR(50),
+    isbn VARCHAR(20),
+    published_date DATE,
+    price DECIMAL(10,2),
+    available_copies INT,
+    FOREIGN KEY (author_id) REFERENCES Authors(author_id)
 );
 
 CREATE TABLE Members (
-member_id INT PRIMARY KEY,
-name VARCHAR(100) NOT NULL,
-email VARCHAR(100),
-phone_number VARCHAR(15),
-membership_date DATE
+    member_id INT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100),
+    phone_number VARCHAR(15),
+    membership_date DATE
 );
 
 CREATE TABLE Transactions (
-transaction_id INT PRIMARY KEY,
-member_id INT,
-book_id INT,
-borrow_date DATE,
-return_date DATE,
-fine_amount DECIMAL(10,2),
-FOREIGN KEY (member_id) REFERENCES Members(member_id),
-FOREIGN KEY (book_id) REFERENCES Books(book_id)
+    transaction_id INT PRIMARY KEY,
+    member_id INT,
+    book_id INT,
+    borrow_date DATE,
+    return_date DATE,
+    fine_amount DECIMAL(10,2),
+    FOREIGN KEY (member_id) REFERENCES Members(member_id),
+    FOREIGN KEY (book_id) REFERENCES Books(book_id)
 );
 
 INSERT INTO Authors VALUES
@@ -80,10 +77,10 @@ INSERT INTO Transactions VALUES
 (9, 5, 105, '2025-10-10', '2025-10-30', 60),
 (10, 6, 103, '2026-08-01', '2026-08-10', 0);
 
-SELECT * from authors;
-SELECT * FROM books;
-SELECT * FROM members;
-SELECT * FROM transactions;
+SELECT * FROM Authors;
+SELECT * FROM Books;
+SELECT * FROM Members;
+SELECT * FROM Transactions;
 
 INSERT INTO Authors VALUES 
 (6, 'Dan Brown', 'dan@example.com');
@@ -129,10 +126,12 @@ OR COUNT(t.transaction_id) > 3;
 SELECT * FROM Books
 ORDER BY title ASC;
 
-SELECT member_id, COUNT(*) AS total_books FROM Transactions
+SELECT member_id, COUNT(*) AS total_books 
+FROM Transactions
 GROUP BY member_id;
 
-SELECT category, COUNT(*) AS total_books FROM Books
+SELECT category, COUNT(*) AS total_books 
+FROM Books
 GROUP BY category;
 
 SELECT SUM(available_copies) AS total_books FROM Books;
@@ -165,52 +164,54 @@ WHERE t.transaction_id IS NULL;
 
 SELECT m.member_id, m.name, t.transaction_id
 FROM Members m
-LEFT JOIN Transactions t
-ON m.member_id = t.member_id
-UNION
-SELECT m.member_id, m.name, t.transaction_id
-FROM Members m
-RIGHT JOIN Transactions t
+FULL OUTER JOIN Transactions t
 ON m.member_id = t.member_id;
 
 SELECT title
 FROM Books
-WHERE book_id IN (SELECT book_id FROM Transactions WHERE member_id IN (
-SELECT member_id
-FROM Members
-WHERE membership_date > '2022-12-31'
-)
+WHERE book_id IN (
+    SELECT book_id 
+    FROM Transactions 
+    WHERE member_id IN (
+        SELECT member_id
+        FROM Members
+        WHERE membership_date > '2022-12-31'
+    )
 );
 
 SELECT title FROM Books
-WHERE book_id = (SELECT book_id FROM Transactions GROUP BY book_id
-ORDER BY COUNT(*) DESC
-LIMIT 1
+WHERE book_id = (
+    SELECT book_id 
+    FROM Transactions 
+    GROUP BY book_id
+    ORDER BY COUNT(*) DESC
+    LIMIT 1
 );
 
 SELECT name
 FROM Members
-WHERE member_id NOT IN (SELECT member_id FROM Transactions
+WHERE member_id NOT IN (
+    SELECT member_id FROM Transactions WHERE member_id IS NOT NULL
 );
 
-SELECT title, YEAR(published_date) AS publication_year
+SELECT title, EXTRACT(YEAR FROM published_date)::INT AS publication_year
 FROM Books;
 
-SELECT transaction_id,DATEDIFF(return_date, borrow_date) AS days_taken
+SELECT transaction_id, (return_date - borrow_date) AS days_taken
 FROM Transactions
 WHERE return_date IS NOT NULL;
 
 SELECT transaction_id,
 CASE
-    WHEN DATEDIFF(return_date, borrow_date) > 14
-    THEN (DATEDIFF(return_date, borrow_date) - 14) * 10
+    WHEN (return_date - borrow_date) > 14
+    THEN ((return_date - borrow_date) - 14) * 10
     ELSE 0
 END AS late_fine
 FROM Transactions
 WHERE return_date IS NOT NULL;
 
 SELECT transaction_id,
-DATE_FORMAT(borrow_date, '%d-%m-%Y') AS borrow_date
+TO_CHAR(borrow_date, 'DD-MM-YYYY') AS borrow_date
 FROM Transactions;
 
 SELECT UPPER(title) AS title
@@ -241,20 +242,20 @@ COUNT(*) OVER (
 ) AS cumulative_books
 FROM Transactions;
 
-SELECT month,total_books, AVG(total_books) OVER (
+SELECT month, total_books, AVG(total_books) OVER (
     ORDER BY month
     ROWS BETWEEN 2 PRECEDING AND CURRENT ROW
 ) AS moving_average
 FROM (
-    SELECT DATE_FORMAT(borrow_date, '%Y-%m') AS month,
+    SELECT TO_CHAR(borrow_date, 'YYYY-MM') AS month,
     COUNT(*) AS total_books
     FROM Transactions
-    GROUP BY DATE_FORMAT(borrow_date, '%Y-%m')
+    GROUP BY TO_CHAR(borrow_date, 'YYYY-MM')
 ) AS x;
 
 SELECT m.name,
 CASE
-    WHEN MAX(t.borrow_date) >= DATE_SUB(CURDATE(), INTERVAL 6 MONTH)
+    WHEN MAX(t.borrow_date) >= CURRENT_DATE - INTERVAL '6 month'
     THEN 'Active'
     ELSE 'Inactive'
 END AS Membership_Status
