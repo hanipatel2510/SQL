@@ -180,7 +180,7 @@ Smart-Library-Management-System/
 
 1. Open **pgAdmin 4**.
 2. Connect to your active PostgreSQL server.
-3. Create a new database named `library_db` (or your preferred name).
+3. Create a new database named `library_management_system`.
 4. Open the **Query Tool** on that database.
 5. Open the `library_management.sql` file.
 6. Execute the SQL script (Press `F5` or click **Execute**).
