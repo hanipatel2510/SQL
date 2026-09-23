@@ -120,7 +120,7 @@ The project includes **7 selected screenshots** showing the main table data and 
 ### 📈 SQL Outputs
 
 - **JOIN Output**  
-  ![JOIN Output](screenshots/05_join_output.png)
+  ![JOIN Output](screenshots/05_inner_join_output.png)
 
 - **Aggregate & Subquery Output**  
   ![Aggregate and Subquery Output](screenshots/06_aggregate_output.png)
