@@ -99,7 +99,7 @@ Primary keys (`PRIMARY KEY`) and foreign keys (`FOREIGN KEY`) maintain referenti
 
 ---
 
-## 📊 Project Screenshots
+## 📊 Project Outputs 
 
 
 ### 📁 Table Data
