@@ -101,7 +101,6 @@ Primary keys (`PRIMARY KEY`) and foreign keys (`FOREIGN KEY`) maintain referenti
 
 ## 📊 Project Screenshots
 
-The project includes **7 selected screenshots** showing the main table data and key SQL outputs.
 
 ### 📁 Table Data
 
